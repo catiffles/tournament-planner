@@ -12,7 +12,8 @@ def connect():
 
 
 def db_connect(sql, params=False):
-    """Connect to the database, and close the connection when the action is complete"""
+    """Connect to the database, and close the
+    connection when the action is complete"""
     con = connect()
     cursor = con.cursor()
     cursor.execute(sql, params)
@@ -21,7 +22,8 @@ def db_connect(sql, params=False):
 
 
 def db_con_return(sql, params=False):
-    """Connect to the database, closes the connection when the action is complete, and returns the query"""
+    """Connect to the database, closes the connection
+    when the action is complete, and returns the query"""
     con = connect()
     cursor = con.cursor()
     cursor.execute(sql, params)
