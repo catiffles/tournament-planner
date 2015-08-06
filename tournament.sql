@@ -7,11 +7,15 @@
 -- these lines here.
 
 -- Create player table
+DROP DATABASE IF EXISTS tournament;
+CREATE DATABASE tournament;
+\c tournament
+
 
 DROP TABLE IF EXISTS players CASCADE;
 CREATE TABLE players (
-  player_id serial PRIMARY KEY,
-  player_name text
+  player_id SERIAL PRIMARY KEY,
+  player_name TEXT
 );
 
 -- Create match table

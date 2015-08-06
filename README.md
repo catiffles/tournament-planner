@@ -10,4 +10,8 @@ A database schema that stores game matches and python code to determine the winn
 
 ###How to run
 - Clone this repo
-- Navigate to the repo in terminal and run python tournament_test.py to check for passing tests.
+- Navigate to the repo in terminal
+- Type psql to enter sql console
+- Type \i tournament.sql to run tournament.sql file and create tables.
+-Exit out of sql console with the command \q
+- Run python tournament_test.py to check for passing tests.
